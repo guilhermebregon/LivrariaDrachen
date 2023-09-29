@@ -1,0 +1,10 @@
+:root{
+
+}
+
+.menuBusca {
+    padding: 10px 0;
+    background: #171717;
+    position: relative;
+    z-index: 10;
+}
