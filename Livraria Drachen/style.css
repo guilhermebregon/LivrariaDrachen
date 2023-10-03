@@ -1,5 +1,11 @@
-:root{
+:root {}
 
+div {
+    display: block;
+}
+
+section{
+    display: block;
 }
 
 .menuBusca {
@@ -7,4 +13,60 @@
     background: #171717;
     position: relative;
     z-index: 10;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.menuBusca div {
+    flex: 2;
+}
+
+#search {
+    display: inline-flex;
+    height: 91px;
+    padding: 27px 146px 27px 21px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1.638px solid var(--Color---Grey-4, #BDBDBD);
+}
+
+.imgInicial {
+    width: 100%;
+    height: auto;
+    max-width: 1980px;
+    max-height: 700px;
+    margin: 0 auto;
+}
+
+.categorias {
+    background: #000;
+    min-height: 137px;
+}
+
+.carouselContainer {
+    max-width: 1980px; /* Adjust the container width */
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+}
+
+.carousel-item {
+    flex: 0 0 25%;  /*Adjust the width of each slide (25% means 4 slides visible at a time) */
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
 }
